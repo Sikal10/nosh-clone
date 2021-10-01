@@ -1,16 +1,51 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Hurme-1;
+        src: url(/fonts/Hurme-Geometric-Sans-No.1/HurmeGeometricSans1-Bold.otf)
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+    .header {
+        @apply flex justify-between items-center md:border-none
+        rounded-full shadow-md md:my-2 my-3 border border-gray-50 mx-9 px-9 py-3
+    }
+    .signup-btn {
+        @apply flex bg-nosh_blue-dark items-center rounded-full px-7 py-4 space-x-2
+    }
+    .home-section {
+        @apply md:max-w-6xl md:mx-auto grid md:grid-cols-2 md:px-10
+    }
+    .home-cards {
+        @apply md:max-w-6xl px-5 gap-y-4 mr-5 md:mx-auto grid md:grid-cols-3 md:gap-x-4 md:gap-y-5 md:mb-20 md:px-10
+    }
+    .fintech-section {
+        @apply md:max-w-6xl md:mx-auto grid md:grid-cols-2 px-3 md:px-10
+    }
+    .gift-cards {
+        @apply mb-20 max-w-6xl mx-auto md:grid md:grid-cols-2 md:my-44
+    }
+    .prefer-section {
+        @apply bg-nosh_blue-dark md:mb-28 md:px-10 md:pb-0 pb-10
+    }
+    .prefer-section__container {
+        @apply md:max-w-6xl md:mx-auto md:mx-40 md:py-24 pt-10
+    }
+    .table-item {
+        @apply border-b border-nosh_blue border-opacity-10  px-3 py-3 font-semibold text-white
+    }
+    .table-item__left {
+        @apply border-b border-nosh_blue border-opacity-10  px-3 py-3 font-semibold text-nosh_blue
+    }
+    .table-item__right {
+        @apply mt-[15px] md:m-0 flex items-center
+    }
+    .icons {
+        @apply border border-blue-400 p-3 rounded-full bg-nosh_blue
+    }
 }
