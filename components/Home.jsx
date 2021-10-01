@@ -7,68 +7,73 @@ const Home = () => {
         <section>
             <main className={"gift-cards"}>
                 <div className={"mt-28 md:mt-0"}>
-                    <div className={"md:px-20 md:py-14"}>
-                        <h2 className={"text-4xl md:px-2 leading-[50px] text-center md:text-left text-nosh_blue md:leading-[55px] md:tracking-wide md:w-[414px] md:text-5xl font-bold"}>
-                            Buy and Sell <br/>
-                            <span className={"text-nosh_blue-dark md:w-min "}>Gift Cards Online Instantly</span>
-                        </h2>
-                        <div className={"md:border-b md:border-gray-100 mt-5 "}/>
-                        <p className={"w-full text-center px-10 md:px-0 mt:4 md:block md:w-[410px] md:text-left md:ml-none text-lg md:my-5 text-nosh_blue-dark font-semibold"}>Easy-to-use
-                            gift card trading
-                            application available for android and iOS.</p>
-                        <div className={"md:mt-0 flex flex-col md:block items-center mt-5"}>
-                            <div className={"flex space-x-1"}>
-                                <button
-                                    className={"px-6 space-x-2 bg-nosh_blue bg-opacity-20 py-3 rounded-full flex items-center"}>
-                                    <FaGooglePlay className={"text-xl text-nosh_blue-dark"}/>
-                                    <div className={"text-left"}>
-                                        <p className={"text-[8px]"}>ANDROID APP ON</p>
-                                        <p className={"font-semibold -mt-1"}>Google Play</p>
-                                    </div>
-                                </button>
-                                <button
-                                    className={"px-6 space-x-2 bg-nosh_blue bg-opacity-20 py-3 rounded-full flex items-center"}>
-                                    <FaApple className={"text-2xl text-nosh_blue-dark"}/>
-                                    <div className={"text-left"}>
-                                        <p className={"text-[8px]"}>DOWNLOAD ON THE</p>
-                                        <p className={"font-semibold -mt-1"}>App Store</p>
-                                    </div>
-                                </button>
-                            </div>
-                            <p className={"font-semibold mt-4 text-center md:w-[200px] md:ml-16 md:mt-5 text-nosh_blue"}>·
-                                #TheTopNOSHExperience</p>
-                        </div>
-                    </div>
+                   <Zoom left>
+                       <div className={"md:px-20 md:py-14"}>
+                           <h2 className={"text-4xl md:px-2 leading-[50px] text-center md:text-left text-nosh_blue md:leading-[55px] md:tracking-wide md:w-[414px] md:text-5xl font-bold"}>
+                               Buy and Sell <br/>
+                               <span className={"text-nosh_blue-dark md:w-min "}>Gift Cards Online Instantly</span>
+                           </h2>
+                           <div className={"md:border-b md:border-gray-100 mt-5 "}/>
+                           <p className={"w-full text-center px-10 md:px-0 mt:4 md:block md:w-[410px] md:text-left md:ml-none text-lg md:my-5 text-nosh_blue-dark font-semibold"}>Easy-to-use
+                               gift card trading
+                               application available for android and iOS.</p>
+                           <div className={"md:mt-0 flex flex-col md:block items-center mt-5"}>
+                               <div className={"flex space-x-1"}>
+                                   <button
+                                       className={"px-6 space-x-2 bg-nosh_blue bg-opacity-20 py-3 rounded-full flex items-center"}>
+                                       <FaGooglePlay className={"text-xl text-nosh_blue-dark"}/>
+                                       <div className={"text-left"}>
+                                           <p className={"text-[8px]"}>ANDROID APP ON</p>
+                                           <p className={"font-semibold -mt-1"}>Google Play</p>
+                                       </div>
+                                   </button>
+                                   <button
+                                       className={"px-6 space-x-2 bg-nosh_blue bg-opacity-20 py-3 rounded-full flex items-center"}>
+                                       <FaApple className={"text-2xl text-nosh_blue-dark"}/>
+                                       <div className={"text-left"}>
+                                           <p className={"text-[8px]"}>DOWNLOAD ON THE</p>
+                                           <p className={"font-semibold -mt-1"}>App Store</p>
+                                       </div>
+                                   </button>
+                               </div>
+                               <p className={"font-semibold mt-4 text-center md:w-[200px] md:ml-16 md:mt-5 text-nosh_blue"}>·
+                                   #TheTopNOSHExperience</p>
+                           </div>
+                       </div>
+                   </Zoom>
                 </div>
                 <div className={"md:pr-10"}>
                     <img src={"/images/landing-gif.gif"} className={""} alt=""/>
                 </div>
             </main>
             <main className={"home-cards"}>
-                <ServicesCard/>
-                <ServicesCard/>
-                <ServicesCard/>
-                <ServicesCard/>
-                <ServicesCard/>
-                <ServicesCard/>
+                <ServicesCard title={"Exchange Gift Cards"} text={"Sell gift cards and be paid within a few minutes"} src={"/images/exchangeCard.svg"}/>
+                <ServicesCard title={"Wide Varieties"} text={"Up to 100 gift card options available to be traded instantly."} src={"/images/noshsvg.svg"}/>
+                <ServicesCard title={"Instant Payment"} text={"Immediate and no-fee withdrawals, at any time, on any day."} src={"/images/instant.svg"}/>
+                <ServicesCard title={"Virtual Account"} text={"Instantly top up your wallet with your virtual bank account."} src={"/images/wallet.svg"}/>
+                <ServicesCard title={"Data and Bills"} text={"Buy airtime, data and pay all bills on the go like a pro."} src={"/images/bills.svg"}/>
+                <ServicesCard title={"24/7 Support"} text={"Readily available in-app live chat support."} src={"/images/support.svg"}/>
             </main>
             <main className={"fintech-section"}>
-                <div className={"md:mx-5 pt-28"}>
-                    <h2 className={"font-bold text-3xl leading-[40px] text-center md:text-left md:leading-[46px] text-nosh_blue"}>You
-                        + NOSH <br/>
-                        <span className={"text-nosh_blue-dark"}>= A Great Life</span>
-                    </h2>
-                    <p className={"text-nosh_blue-dark w-full text-center leading-[18px] md:text-[16px] md:text-left md:leading-[20px] md:w-[410px] font-semibold mt-5"}>
-                        Nosh is a FinTech product that offers easy and quick transactions for anyone.
-                        Equipped with modern and seamless means of engagement,
-                        Nosh offers the easiest and most convenient
-                        way for you to purchase and redeem gift cards in Nigeria,
-                        with loads of other products, whatever they may be.
-                    </p>
-                    <div className={"border-b border-gray-100 md:my-5 my-8"}/>
-                    <p className={"font-semibold text-xl text-nosh_blue text-center md:text-left"}>· Create an account
-                        instantly</p>
-                </div>
+                <Zoom left>
+                    <div className={"md:mx-5 pt-28"}>
+                        <h2 className={"font-bold text-3xl leading-[40px] text-center md:text-left md:leading-[46px] text-nosh_blue"}>You
+                            + NOSH <br/>
+                            <span className={"text-nosh_blue-dark"}>= A Great Life</span>
+                        </h2>
+                        <p className={"text-nosh_blue-dark w-full text-center leading-[18px] md:text-[16px] md:text-left md:leading-[20px] md:w-[410px] font-semibold mt-5"}>
+                            Nosh is a FinTech product that offers easy and quick transactions for anyone.
+                            Equipped with modern and seamless means of engagement,
+                            Nosh offers the easiest and most convenient
+                            way for you to purchase and redeem gift cards in Nigeria,
+                            with loads of other products, whatever they may be.
+                        </p>
+                        <div className={"border-b border-gray-100 md:my-5 my-8"}/>
+                        <p className={"font-semibold text-xl text-nosh_blue text-center md:text-left"}>· Create an account
+                            instantly</p>
+                    </div>
+
+                </Zoom>
                 <div className={""}>
                     <img src={"/images/noshgif.gif"} alt=""/>
                 </div>
@@ -133,19 +138,21 @@ const Home = () => {
                     <img src={"/images/help-gif.gif"} alt=""/>
                 </div>
 
-                <div className={"mx-5 mt-4 md:py-28"}>
-                    <h2 className={"font-bold text-2xl md:text-3xl text-center md:text-left leading-[46px] text-nosh_blue"}>Ready
-                        available to</h2>
-                    <h2 className={"font-bold md:text-3xl text-2xl md:text-left text-center text-nosh_blue-dark"}>Help</h2>
-                    <p className={"text-nosh_blue-dark text-[16px] text-center md:text-left leading-[20px] md:w-[410px] font-semibold mt-5"}>
-                        Effective customer service is a two-way street. Nosh is always available to answer your
-                        questions.
-                        You can talk to us using the in-app live chat, send us an email or call us at anytime.
-                    </p>
-                    <div className={"border-b border-gray-100 my-5 "}/>
-                    <p className={"font-semibold text-center md:text-left text-xl text-nosh_blue"}>· Contact Us Now</p>
+                <Zoom right>
+                    <div className={"mx-5 mt-4 md:py-28"}>
+                        <h2 className={"font-bold text-2xl md:text-3xl text-center md:text-left leading-[46px] text-nosh_blue"}>Ready
+                            available to</h2>
+                        <h2 className={"font-bold md:text-3xl text-2xl md:text-left text-center text-nosh_blue-dark"}>Help</h2>
+                        <p className={"text-nosh_blue-dark text-[16px] text-center md:text-left leading-[20px] md:w-[410px] font-semibold mt-5"}>
+                            Effective customer service is a two-way street. Nosh is always available to answer your
+                            questions.
+                            You can talk to us using the in-app live chat, send us an email or call us at anytime.
+                        </p>
+                        <div className={"border-b border-gray-100 my-5 "}/>
+                        <p className={"font-semibold text-center md:text-left text-xl text-nosh_blue"}>· Contact Us Now</p>
 
-                </div>
+                    </div>
+                </Zoom>
 
                 <div className={"md:hidden"}>
                     <img src={"/images/help-gif.gif"} alt=""/>
