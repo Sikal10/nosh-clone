@@ -82,10 +82,10 @@ const Home = () => {
                     <h2 className={"font-bold md:text-3xl md:leading-[46px] text-center md:text-left text-2xl text-nosh_blue"}>NOSH <span
                         className={"text-nosh_blue-dark"}>for Users</span></h2>
                     <p className={"text-nosh_blue-dark w-full text-center md:text-left text-[16px] md:leading-[20px] md:w-[410px] font-semibold mt-5"}>
-                        Skip all the bells and whistles that come with using online platforms and access free,
-                        easy gift card trading with Nosh.
-                        We've implemented top-notch security procedures to ensure the protection of your privacy, assets
-                        and your funds.
+                        {`Skip all the bells and whistles that come with using online platforms and access free,
+                            easy gift card trading with Nosh.
+                            We've implemented top-notch security procedures to ensure the protection of your privacy, assets
+                            and your funds.`}
                     </p>
                     <p className={"text-nosh_blue-dark w-full text-center md:text-left text-[16px] md:leading-[20px] md:w-[410px] font-semibold mt-5"}>You
                         get
@@ -159,12 +159,12 @@ const Home = () => {
                             FAQs - <span className={"text-nosh_blue-dark"}>Frequently Asked Questions.</span>
                         </h2>
                         <p className={"text-nosh_blue-dark text-[16px] text-center px-10 md:px-0 md:text-left leading-[20px] md:w-[410px] font-semibold mt-5"}>
-                            If you've got any questions or recommendations, please get in touch with us.
+                            {`If you've got any questions or recommendations, please get in touch with us.`}
                         </p>
                         <p className={"text-nosh_blue-dark text-[16px] text-center md:text-left px-5 md:px-0 leading-[20px] md:w-[410px] font-semibold mt-5"}>
-                            All our customer care and communication channels are open, and we're more than willing to
-                            hear
-                            from you.
+                            {`All our customer care and communication channels are open, and we're more than willing to
+                                hear
+                                from you.`}
                         </p>
                         <div className={"border-b border-gray-100 my-5 "}/>
                         <p className={"font-semibold text-center md:text-left text-xl text-nosh_blue"}>· Get Quick
