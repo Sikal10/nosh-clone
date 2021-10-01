@@ -1,14 +1,8 @@
 import {BiPlus} from "react-icons/bi";
 import {IoMdMenu} from "react-icons/io";
 import {FaTimes} from "react-icons/fa";
-import {useState} from "react";
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleIcon = () => {
-        setIsOpen(!isOpen);
-    }
+const Header = ({isOpen, toggleIcon}) => {
 
     return (
         <header className={"sticky top-0 bg-white z-50 relative"}>
@@ -29,7 +23,8 @@ const Header = () => {
             </div>
 
             {/*overlay*/}
-            <div onClick={toggleIcon} className={`md:hidden ${isOpen && "h-[100vh] fixed overflow-hidden w-2/6 top-0 right-0 left-0 bottom-0 bg-black opacity-50"}`}/>
+            <div onClick={toggleIcon} className={`md:hidden ${isOpen && "transition duration-300 ease-in h-[100vh] fixed overflow-hidden w-2/6 top-0 right-0 left-0 bottom-0 bg-black opacity-50"}`}/>
+
             {/*mobile-nav*/}
             <aside className={`md:hidden ${isOpen ? "absolute -mt-3 overflow-hidden top-0 right-0 h-[100vh] w-4/6 bg-white space-y-3" : "hidden"}`}>
                 <p onClick={toggleIcon} className={"border-4 absolute right-[20px] top-[20px] font-light border-nosh_blue rounded-full border-opacity-30 w-[40px] h-[40px] px-[8px] pt-[8px]  text-center"}>
@@ -39,7 +34,7 @@ const Header = () => {
                 <button className={"signup-btn mx-auto"}>
                     <p className={"font-bold text-white"}>Sign-Up</p>
                     <span className={"border rounded-md border-gray-700 p-[2px]"}>
-                    <BiPlus className={"text-nosh_blue "}/>
+                    <BiPlus className={"text-nosh_blue"}/>
                     </span>
                 </button>
             </aside>
