@@ -3,13 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    @font-face {
-        font-family: Hurme-1;
-        src: url(/fonts/Hurme-Geometric-Sans-No.1/HurmeGeometricSans1-Bold.otf)
-    }
-}
-
 @layer components {
     .header {
         @apply flex justify-between items-center md:border-none

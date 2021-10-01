@@ -12,9 +12,6 @@ module.exports = {
           app: "#EAF8FD",
           signIn: "#395d69"
         }
-      },
-      fontFamily : {
-        hurme: " 'hurme' "
       }
     },
   },

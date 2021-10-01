@@ -10,8 +10,6 @@ const Header = () => {
         setIsOpen(!isOpen);
     }
 
-    console.log(isOpen)
-
     return (
         <header className={"sticky top-0 bg-white z-50 relative"}>
             <div className={"header"}>

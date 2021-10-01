@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom";
 
 const Home = () => {
     return (
-        <section className={"font-hurme "}>
+        <section>
             <main className={"gift-cards"}>
                 <div className={"mt-28 md:mt-0"}>
                     <div className={"md:px-20 md:py-14"}>
