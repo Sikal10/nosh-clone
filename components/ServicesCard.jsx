@@ -6,7 +6,7 @@ const ServicesCard = ({title, src, text}) => {
             <p className={"lg:w-[190px] text-base mt-1"}>{text}</p>
 
             <div className={"absolute top-[23px] -right-9 p-4 bg-white rounded-full shadow-xl"}>
-                <img src={src} alt="" />
+                <img loading={"lazy"} src={src} alt="" />
             </div>
         </div>
     );
